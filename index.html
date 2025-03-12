@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="uz">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MARS Login</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+           body {
+            font-family: Arial, sans-serif;
+            background-color: #f8f8f8;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            margin: 0;
+        }
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        .container{
+            margin: 0 auto;
+            max-width: 1220px;
+        }
+        header {
+            width: 100%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 15px 30px;
+            background-color: white;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+            position: fixed;
+            top: 0;
+            left: 0;
+        }
+        .logo {
+            font-size: 24px;
+            font-weight: bold;
+            color: white;
+            background: #8800ff;
+            padding: 5px 15px;
+            border-radius: 5px;
+        }
+        .lang {
+            font-size: 16px;
+            cursor: pointer;
+            color: #333;
+        }
+        main {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 100%;
+            height: 100vh;
+        }
+        .login-box {
+            background: white;
+            padding: 40px;
+            border-radius: 10px;
+            box-shadow: 0 2px 15px rgba(0, 0, 0, 0.1);
+            text-align: center;
+            width: 400px;
+        }
+        h2 {
+            font-size: 22px;
+            margin-bottom: 20px;
+            color: #333;
+        }
+        .role-buttons {
+            display: flex;
+            justify-content: center;
+            gap: 10px;
+            margin-bottom: 20px;
+        }
+        .role-buttons button {
+            background: #e0e0e0;
+            border: none;
+            padding: 12px;
+            border-radius: 5px;
+            cursor: pointer;
+            flex: 1;
+            font-size: 16px;
+        }
+        .role-buttons .active {
+            background: #ff6600;
+            color: white;
+        }
+        form input {
+            width: 100%;
+            padding: 12px;
+            margin: 10px 0;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            font-size: 16px;
+        }
+        form button {
+            width: 100%;
+            padding: 12px;
+            background: #ff6600;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            margin-top: 15px;
+            font-size: 16px;
+        }
+        p a {
+            color: #ff6600;
+            text-decoration: none;
+            font-size: 14px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+
+        <header>
+            <div class="logo">MARS</div>
+            <div class="lang">O'zб</div>
+        </header>
+        <main>
+            <div class="login-box">
+                <h2>Spacega xush kelibsiz</h2>
+                <div class="role-buttons">
+                    <button class="active">O'quvchi</button>
+                    <button>Ota-onaman</button>
+                </div>
+                <form>
+                    <input class="ism" type="text" placeholder="Modme Id or Phone number">
+                    <input class="parol" type="password" placeholder="Password">
+                    <button  class="tekshirish" type="submit">Tasdiqlash</button>
+                </form>
+                <p><a href="#">QR code orqali kirish</a></p>
+            </div>
+        </main>
+    </div>
+    <script src="./script.js"></script>
+</body>
+</html>
